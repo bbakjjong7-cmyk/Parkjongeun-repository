@@ -73,6 +73,27 @@
             font-weight: bold;
             color: #e53e3e;
         }
+        .script-note {
+            background-color: #f8fafc;
+            border-left: 4px solid #94a3b8;
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 4px;
+            font-size: 0.95em;
+            color: #475569;
+        }
+        .script-note h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #334155;
+            font-size: 1.05em;
+        }
+        .script-note p {
+            margin-bottom: 10px;
+        }
+        .script-note p:last-child {
+            margin-bottom: 0;
+        }
         .footer {
             text-align: center;
             margin-top: 50px;
@@ -85,16 +106,7 @@
 
     <div class="header-main">
         <h1>AI agent와 비디오 게임에서의 AI 에이전트</h1>
-        <p>문헌정보학과 25 박종은</p>
-    </div>
-
-    <div class="slide">
-        <h2>📌 목차</h2>
-        <ul>
-            <li>AI 에이전트란?</li>
-            <li>비디오 게임에서의 AI 에이전트</li>
-            <li>시사점</li>
-        </ul>
+        <p>문헌정보학과 25학번 박종은</p>
     </div>
 
     <div class="slide">
@@ -108,126 +120,138 @@
             <table>
                 <thead>
                     <tr>
-                        <th>AI Agent</th>
-                        <th>AI Chatbot</th>
+                        <th>구분</th>
+                        <th>AI 챗봇 (Chatbot)</th>
+                        <th>AI 에이전트 (Agent)</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>자율적이고 독립적</td>
-                        <td>질문에 응답</td>
+                        <td><strong>핵심 목적</strong></td>
+                        <td>정보 제공 및 대화</td>
+                        <td>목표 달성 및 태스크 수행</td>
                     </tr>
                     <tr>
-                        <td>목적지향적 다단계 프로세스</td>
-                        <td>단발적 응답</td>
+                        <td><strong>작동 방식</strong></td>
+                        <td>사용자 질문에 반응 (Reactive)</td>
+                        <td>스스로 계획하고 실행 (Proactive)</td>
                     </tr>
                     <tr>
-                        <td>외부 파일, 브라우저에 적용</td>
-                        <td>대화창에 머묾</td>
-                    </tr>
-                    <tr>
-                        <td><span class="highlight">행동</span></td>
-                        <td>말</td>
+                        <td><strong>비유</strong></td>
+                        <td>잘 정리된 백과사전</td>
+                        <td>일을 맡기면 알아서 해오는 직원</td>
                     </tr>
                 </tbody>
             </table>
+        </div>
+        
+        <div class="script-note">
+            <h4>💡 부가 설명</h4>
+            <p>챗봇은 <strong>[사용자 질문] → [AI 답변]</strong>으로 끝나는 단발성 구조가 강하지만, AI 에이전트는 <strong>[목표 부여] → [계획 수립] → [실행] → [결과 확인] → [수정 및 재실행]</strong>의 피드백 루프를 스스로 반복하며 목표를 완수할 때까지 멈추지 않는다는 큰 차이가 있습니다.</p>
         </div>
     </div>
 
     <div class="slide">
         <h2>💼 AI Agent가 사용되는 곳</h2>
         <ul>
-            <li><strong>최근 화제가 된 AI 비서:</strong> Open ClaW (24시간 무급 비서 역할)</li>
-            <li>프로그래밍</li>
-            <li>고객 문제 해결</li>
-            <li>웹 및 컴퓨터 조작</li>
-            <li>비즈니스 및 사무 자동화</li>
+            <li><strong>소프트웨어 개발 (자율적 코딩):</strong> Devin(데빈), Replit Agent 등</li>
+            <li><strong>고객 문제 해결:</strong> Sierra(시에라) 등 실제 DB에 접속해 처리</li>
+            <li><strong>웹 과업 수행 및 사무 자동화:</strong> Operator, MultiOn 등</li>
+            <li><strong>비즈니스 프로세스 자동화:</strong> Zapier Central, Copilot 등</li>
+            <li><strong>개인 비서:</strong> Open ClaW 등 지정 범위 내 컴퓨터 자율 조작</li>
         </ul>
+        
+        <div class="script-note">
+            <h4>💡 부가 설명</h4>
+            <p>AI 에이전트는 단순한 코드 작성을 넘어 버그를 스스로 찾고 수정(Self-healing)하는 동료 개발자 역할을 하거나, 고객의 환불/사이즈 변경 요청을 받아 실제 재고 DB에 접속해 처리하는 등 <strong>실질적인 '작업'을 수행</strong>합니다.</p>
+        </div>
     </div>
 
     <div class="slide">
         <h2>🎮 왜 게임인가?</h2>
         <ul>
             <li>AI agent의 <strong>자율성과 확장성</strong></li>
-            <li>게임의 <strong>체험성</strong></li>
+            <li>게임 매체의 강력한 특징인 <strong>체험성</strong></li>
         </ul>
+        <div class="script-note">
+            <h4>💡 부가 설명</h4>
+            <p>AI 에이전트는 목적지향성과 자율성을 가지기 때문에, 플레이어에게 극대화된 '체험'을 제공해야 하는 게임과 완벽하게 결합할 수 있습니다. 사실 게임과 AI는 그 특성상 초창기부터 긴밀하게 공생하며 진화해 왔습니다.</p>
+        </div>
     </div>
 
     <div class="slide">
-        <h2>🕹️ 비디오 게임의 AI 에이전트 적용 예시</h2>
+        <h2>🕹️ 비디오 게임의 AI 에이전트 적용 예시: 아크레이더스</h2>
         <ul>
-            <li><strong>Arc Raiders:</strong> Embark Studios가 개발한 PvPvE 서바이벌 슈팅 게임
-                <ul>
-                    <li>강화학습을 사용한 AI 학습</li>
-                    <li>가장 효율적인 방법을 찾아냄</li>
-                    <li>고정된 패턴이 아닌, 예측 불가능한 위협 제공</li>
-                </ul>
-            </li>
-            <li><strong>Mimesis (미메시스):</strong> 렐루 게임즈(ReLU Games)가 개발한 4인 협동 서바이벌 공포 게임
-                <ul>
-                    <li>실시간 음성 복제 및 맥락을 파악하는 AI 적용</li>
-                </ul>
-            </li>
+            <li>Embark Studios가 개발한 PvPvE 서바이벌 슈팅 게임</li>
+            <li><strong>강화학습(Reinforcement Learning)</strong>을 사용한 적대적 AI 학습</li>
+            <li>고정된 패턴이 아닌, 예측 불가능한 움직임(비틀거림, 균형 회복 등) 구현</li>
         </ul>
+        <div class="script-note">
+            <h4>💡 부가 설명</h4>
+            <p>기존 게임의 AI가 "플레이어가 X를 하면 Y를 해"라는 고정된 행동 트리(Behavior Tree)를 따랐다면, 아크레이더스는 중력과 마찰이 적용된 물리 환경에서 수년간 AI를 훈련시켰습니다. 실시간으로 유저를 보고 학습하는 것은 아니지만, 수백만 번의 실패를 통해 로봇이 스스로 걷고 중심을 잡는 법을 익혔기 때문에 부서진 상태에서도 기괴하고 예측 불가능한 움직임으로 몰입감을 높여줍니다.</p>
+        </div>
     </div>
 
     <div class="slide">
-        <h2>🛠️ 게임 개발에서의 AI 에이전트 활용 현황</h2>
+        <h2>🕹️ 비디오 게임의 AI 에이전트 적용 예시: 미메시스</h2>
         <ul>
-            <li>콘텐츠 최적화 (44%)</li>
-            <li>동적 밸런싱 (38%)</li>
-            <li>인게임 코칭·튜토리얼 (38%)</li>
-            <li>절차적 세계 생성 (37%)</li>
-            <li>자동 모더레이션 (37%)</li>
-            <li>적응형 난이도 조정 (36%)</li>
-            <li>자동 테스팅·버그 리포트 (35%)</li>
-            <li>고급 NPC 행동 (34%)</li>
+            <li>렐루 게임즈가 개발한 4인 협동 서바이벌 공포 게임</li>
+            <li>플레이어의 음성 톤, 억양, 발성 패턴 <strong>실시간 복제</strong></li>
+            <li>상황과 맥락을 이해하고 행동을 모방하는 AI 적 적용</li>
         </ul>
-        <p><em>* AI 에이전트는 매출 상승에도 긍정적인 영향을 미침 (게이머들의 구매 의향 증가)</em></p>
+        <div class="script-note">
+            <h4>💡 부가 설명</h4>
+            <p>크래프톤의 가벼운 언어 모델인 <strong>Gaming SLM</strong>을 활용하여 상황(Context)을 인지합니다. 예를 들어 죽은 동료의 목소리로 "여기 2층이야, 이쪽으로 와"라며 플레이어를 유인하거나 강화학습을 통해 유저의 파밍 동선을 예측하고 분열을 유도합니다.</p>
+        </div>
     </div>
 
     <div class="slide">
-        <h2>🛡️ 테스터 및 보안관으로서의 AI 에이전트</h2>
+        <h2>🛠️ 게임 개발과 테스트에서의 AI 에이전트</h2>
         <ul>
-            <li><strong>테스터 역할:</strong> 자동으로 오류와 성능 문제를 찾아내고 게임의 난이도를 조절</li>
-            <li><strong>사이버 보안관 역할:</strong> 자율적으로 플레이어의 비정상적 행동(핵, 치트 등)을 감시하고 조치 (예: Anybrain, ggwp)</li>
+            <li><strong>개발 현황:</strong> 구글 클라우드 설문 결과, 개발자의 87%가 이미 AI 에이전트 활용 중</li>
+            <li><strong>테스터 역할 (modl.ai, EA FIFA):</strong> 강화학습 봇이 인간보다 20배 빠른 속도로 수천 번 경기를 진행해 충돌 버그 및 밸런싱 문제 탐지</li>
+            <li><strong>사이버 보안관 (Anybrain, GGWP):</strong> 플레이어의 마우스 움직임, 타이핑 속도 등 '비정상적 행동 데이터'와 '대화 맥락'을 분석해 스스로 치터(핵 유저) 차단</li>
         </ul>
+        <div class="script-note">
+            <h4>💡 부가 설명</h4>
+            <p>테스트 자동화로 비용을 절감할 뿐만 아니라, 개발팀이 더 가치 있고 창의적인 기획 작업에 에너지를 집중할 수 있도록 돕습니다. 유저들 또한 응답자의 79%가 똑똑한 AI NPC가 포함된 게임을 구매할 의향이 있다고 답할 만큼 긍정적인 반응을 보입니다.</p>
+        </div>
     </div>
 
     <div class="slide">
-        <h2>💡 시사점</h2>
+        <h2>💡 시사점: Sim to Real (가상에서 현실로)</h2>
         <ul>
-            <li>게임과 같이 이루어진 AI의 역사</li>
-            <li>패턴을 가진 AI에서 <strong>목적을 가진 AI</strong>로의 진화!</li>
-            <li><strong>Sim to Real:</strong> 가상(게임)에서의 학습이 현실로 전이</li>
-            <li><strong>어떻게 AI를 이용해야 할까?</strong>
-                <ul>
-                    <li>데이터를 모으고 이용하는 방법</li>
-                    <li>어떤 방향으로, 무엇에 집중할지 (무엇을 위해?)</li>
-                </ul>
-            </li>
+            <li>패턴을 가진 AI(팩맨)에서 <strong>목적을 가진 AI</strong>로 진화</li>
+            <li>게임(가상)에서의 수백만 번의 시행착오 학습이 현실 로봇에 이식됨</li>
         </ul>
+        <div class="script-note">
+            <h4>💡 부가 설명</h4>
+            <p>게임은 AI가 위험이나 비용 없이 무한정 학습할 수 있는 '고도화된 훈련장(샌드박스)'입니다. NVIDIA Isaac Sim과 같은 플랫폼을 통해 게임 물리 엔진 속에서 훈련된 자율주행 AI나 로봇 파지(물건 집기) 기술이 수정 없이 실제 현실의 로봇(Real-world agent)에 전이되는 현상(Sim-to-Real)이 가속화되고 있습니다.</p>
+        </div>
     </div>
 
     <div class="slide">
-        <h2>🤔 아쉬웠던 점 & 고민해볼 점</h2>
+        <h2>🤔 한계점 및 향후 과제 (사회적 영향)</h2>
         <ul>
-            <li>AI 비서와 함께하는 게임의 미래는 어떤 모습일까?</li>
+            <li><strong>긍정적 영향:</strong> 자율주행, 로봇 산업 등 기술 발전의 가속화 및 인간의 창의적 업무 집중</li>
+            <li><strong>부정적 우려 (통제력 상실):</strong> 자율학습 AI가 통제된 목적을 벗어나 예기치 못한 행동을 할 경우의 리스크</li>
         </ul>
+        <div class="script-note">
+            <h4>💡 부가 설명</h4>
+            <p>게임은 데이터를 효율적으로 수집하기에 매우 유리한 매체입니다. 문헌정보학에서 이용자의 지식정보 활용을 중시하듯, 게임 외의 산업에서도 데이터를 "어떻게 모으고, 어떤 목적을 위해 사용할 것인지"에 대한 깊은 고민과 통제 장치가 필요합니다.</p>
+        </div>
     </div>
 
     <div class="slide">
-        <h2>📚 참고문헌 및 AI 사용 내역</h2>
+        <h2>🎯 결론 및 아쉬웠던 점</h2>
         <ul>
-            <li><strong>AI 툴 사용 내역:</strong>
-                <ul>
-                    <li>Gemini: 발표 구성 기획</li>
-                    <li>Dbpia AI 에이전트: 게임 개발에서의 AI 에이전트 이용 관련 논문 자료 탐색</li>
-                    <li>클로드 (Claude): 대본 내용을 풍부하게 작성</li>
-                </ul>
-            </li>
-            <li><strong>참고 자료:</strong> 한국정보과학회 학술발표논문집, 한국게임학회 논문지 외 다수 (DBPIA, ZDNet, Inven 등)</li>
+            <li>실습 및 체험의 한계 (학생 수준에서의 기술적 진입장벽)</li>
+            <li>"AI 에이전트의 정의를 어디까지 볼 것인가?"</li>
         </ul>
+        <div class="script-note">
+            <h4>💡 부가 설명</h4>
+            <p>보통 AI 비서(인간 보조)를 에이전트로 생각하지만, 게임 속의 적이나 테스터 AI도 에이전트인가? 라는 의문이 있었습니다. 결론적으로 게임 속 AI는 범용성은 낮지만 자율성, 학습, 목표 지향성이라는 특성을 가장 극적으로 시각화한다는 점에서 <strong>'AI 에이전트의 원형(Prototype)'</strong>에 가장 가까운 존재라고 생각합니다. 훗날 플레이어 옆에서 능동적으로 돕고 학습하는 AI 에이전트 동료가 등장하는 게임을 기대해 봅니다.</p>
+        </div>
     </div>
 
     <div class="footer">
