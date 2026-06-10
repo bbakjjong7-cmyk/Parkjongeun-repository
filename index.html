@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI agent와 비디오 게임에서의 AI 에이전트</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f1f3f5;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .header-main {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .header-main h1 {
+            color: #1a202c;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header-main p {
+            color: #718096;
+            font-size: 1.2em;
+        }
+        .slide {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin: 0 auto 30px;
+            padding: 40px;
+            max-width: 800px;
+            border-top: 5px solid #4299e1;
+        }
+        h2 {
+            color: #2b6cb0;
+            border-bottom: 2px solid #ebf8ff;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 15px;
+            text-align: center;
+        }
+        th {
+            background-color: #ebf8ff;
+            color: #2b6cb0;
+            font-weight: 700;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #e53e3e;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #a0aec0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-main">
+        <h1>AI agent와 비디오 게임에서의 AI 에이전트</h1>
+        <p>문헌정보학과 25 박종은</p>
+    </div>
+
+    <div class="slide">
+        <h2>📌 목차</h2>
+        <ul>
+            <li>AI 에이전트란?</li>
+            <li>비디오 게임에서의 AI 에이전트</li>
+            <li>시사점</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>🤖 AI AGENT란?</h2>
+        <p>지능형 에이전트 또는 인공지능 에이전트라고 불리는 AI AGENT는 <strong>사용자의 목표 달성을 위해 스스로 환경을 인지하고, 계획을 세우며, 도구를 활용해 능동적으로 작업을 수행하는 자율형 인공지능 시스템</strong>이다.</p>
+    </div>
+
+    <div class="slide">
+        <h2>⚔️ AI Agent vs AI Chatbot</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>AI Agent</th>
+                        <th>AI Chatbot</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>자율적이고 독립적</td>
+                        <td>질문에 응답</td>
+                    </tr>
+                    <tr>
+                        <td>목적지향적 다단계 프로세스</td>
+                        <td>단발적 응답</td>
+                    </tr>
+                    <tr>
+                        <td>외부 파일, 브라우저에 적용</td>
+                        <td>대화창에 머묾</td>
+                    </tr>
+                    <tr>
+                        <td><span class="highlight">행동</span></td>
+                        <td>말</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="slide">
+        <h2>💼 AI Agent가 사용되는 곳</h2>
+        <ul>
+            <li><strong>최근 화제가 된 AI 비서:</strong> Open ClaW (24시간 무급 비서 역할)</li>
+            <li>프로그래밍</li>
+            <li>고객 문제 해결</li>
+            <li>웹 및 컴퓨터 조작</li>
+            <li>비즈니스 및 사무 자동화</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>🎮 왜 게임인가?</h2>
+        <ul>
+            <li>AI agent의 <strong>자율성과 확장성</strong></li>
+            <li>게임의 <strong>체험성</strong></li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>🕹️ 비디오 게임의 AI 에이전트 적용 예시</h2>
+        <ul>
+            <li><strong>Arc Raiders:</strong> Embark Studios가 개발한 PvPvE 서바이벌 슈팅 게임
+                <ul>
+                    <li>강화학습을 사용한 AI 학습</li>
+                    <li>가장 효율적인 방법을 찾아냄</li>
+                    <li>고정된 패턴이 아닌, 예측 불가능한 위협 제공</li>
+                </ul>
+            </li>
+            <li><strong>Mimesis (미메시스):</strong> 렐루 게임즈(ReLU Games)가 개발한 4인 협동 서바이벌 공포 게임
+                <ul>
+                    <li>실시간 음성 복제 및 맥락을 파악하는 AI 적용</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>🛠️ 게임 개발에서의 AI 에이전트 활용 현황</h2>
+        <ul>
+            <li>콘텐츠 최적화 (44%)</li>
+            <li>동적 밸런싱 (38%)</li>
+            <li>인게임 코칭·튜토리얼 (38%)</li>
+            <li>절차적 세계 생성 (37%)</li>
+            <li>자동 모더레이션 (37%)</li>
+            <li>적응형 난이도 조정 (36%)</li>
+            <li>자동 테스팅·버그 리포트 (35%)</li>
+            <li>고급 NPC 행동 (34%)</li>
+        </ul>
+        <p><em>* AI 에이전트는 매출 상승에도 긍정적인 영향을 미침 (게이머들의 구매 의향 증가)</em></p>
+    </div>
+
+    <div class="slide">
+        <h2>🛡️ 테스터 및 보안관으로서의 AI 에이전트</h2>
+        <ul>
+            <li><strong>테스터 역할:</strong> 자동으로 오류와 성능 문제를 찾아내고 게임의 난이도를 조절</li>
+            <li><strong>사이버 보안관 역할:</strong> 자율적으로 플레이어의 비정상적 행동(핵, 치트 등)을 감시하고 조치 (예: Anybrain, ggwp)</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>💡 시사점</h2>
+        <ul>
+            <li>게임과 같이 이루어진 AI의 역사</li>
+            <li>패턴을 가진 AI에서 <strong>목적을 가진 AI</strong>로의 진화!</li>
+            <li><strong>Sim to Real:</strong> 가상(게임)에서의 학습이 현실로 전이</li>
+            <li><strong>어떻게 AI를 이용해야 할까?</strong>
+                <ul>
+                    <li>데이터를 모으고 이용하는 방법</li>
+                    <li>어떤 방향으로, 무엇에 집중할지 (무엇을 위해?)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>🤔 아쉬웠던 점 & 고민해볼 점</h2>
+        <ul>
+            <li>AI 비서와 함께하는 게임의 미래는 어떤 모습일까?</li>
+        </ul>
+    </div>
+
+    <div class="slide">
+        <h2>📚 참고문헌 및 AI 사용 내역</h2>
+        <ul>
+            <li><strong>AI 툴 사용 내역:</strong>
+                <ul>
+                    <li>Gemini: 발표 구성 기획</li>
+                    <li>Dbpia AI 에이전트: 게임 개발에서의 AI 에이전트 이용 관련 논문 자료 탐색</li>
+                    <li>클로드 (Claude): 대본 내용을 풍부하게 작성</li>
+                </ul>
+            </li>
+            <li><strong>참고 자료:</strong> 한국정보과학회 학술발표논문집, 한국게임학회 논문지 외 다수 (DBPIA, ZDNet, Inven 등)</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 박종은 - AI agent와 비디오 게임</p>
+    </div>
+
+</body>
+</html>
